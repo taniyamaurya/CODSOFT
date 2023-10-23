@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homepage</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        *{
+    padding: 0%;
+    margin: 0;
+    font-family: sans-serif;
+    }
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.png);
+        background-size: cover;
+        background-position: center;
+
+    }
+    .navbar{
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 200px;
+        color: white;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+
+    }
+    .navbar ul li::after{
+        content: "";
+        height: 3px;
+        width: 0;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+    }
+    .content h1{
+        font-size: 70px;
+        margin-top: 80px;
+    }
+    .content p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+        width: 900px;
+    }
+    button{
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+    }
+    span{
+        background: #009688;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+
+    }
+    button:hover{
+        border: none;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    .footer{
+        height: 5vh;
+        background: #009688;
+    }
+    .footer h3{
+        text-align: center;
+        /* margin-top: 5px; */
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <!-- <h1>hello</h1> -->
+        <div class="navbar">
+            <!-- <img src="logo.png" alt="logo"> -->
+            <h1 class="logo">Home Decor</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bedroom">Bedroom</a></li>
+                <li><a href="#Dining">Dining</a></li>
+                <li><a href="#Kitchen">Kitchen</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Design your house</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta qui distinctio illum, corrupti dolorum cum hic rem? Eius qui totam beatae necessitatibus consequatur officia temporibus dignissimos commodi a vel. Fugiat.</p>
+            <button type="button"> <span></span>View More</button>
+            <button type="button"> <span></span>More info</button>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <h3>Copyrights reserved, Taniya Maurya 2023</h3>
+    </div>
+</body>
+</html>
